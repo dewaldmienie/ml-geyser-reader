@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+    jupiter: 
+        # https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html
+        image: jupyter/scipy-notebook
+        ports:
+            - "8888:8888"
+        volumes: 
+            - "./work/:/home/jovyan/work/"
